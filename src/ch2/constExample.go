@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
-
+import (
+	"fmt"
+	"unsafe"
+)
+const(
+	Unknown = 0
+    Female = 1
+    Male = 2
+)
 func main() {
 	const name = "hello woed"
 	const (
@@ -11,4 +18,5 @@ func main() {
 	fmt.Println(name)
 	fmt.Println(a)
 	fmt.Println(b)
+	fmt.Println(unsafe.Sizeof(Male))
 }
