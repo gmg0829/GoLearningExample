@@ -9,6 +9,17 @@ const(
     Female = 1
     Male = 2
 )
+
+type Weekday int
+const (
+    Sunday Weekday = iota
+    Monday
+    Tuesday
+    Wednesday
+    Thursday
+    Friday
+    Saturday
+)
 func main() {
 	const name = "hello woed"
 	const (
@@ -17,6 +28,7 @@ func main() {
 	)
 	fmt.Println(name)
 	fmt.Println(a)
-	fmt.Println(b)
+	fmt.Println(b)	
+	fmt.Println(Sunday)
 	fmt.Println(unsafe.Sizeof(Male))
 }
